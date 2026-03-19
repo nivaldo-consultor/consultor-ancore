@@ -1,0 +1,149 @@
+/* ============================================================
+   typography.css — Textos, headings e componentes de texto
+   ============================================================ */
+
+/* ── Headings ── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 4.5vw, 4.2rem);
+  margin-bottom: 1.5rem;
+}
+
+h1 span {
+  color: var(--color-red);
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+h2 span {
+  color: var(--color-red);
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Section label ── */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 0.8rem;
+}
+
+.section-tag::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: var(--color-red);
+  flex-shrink: 0;
+}
+
+/* ── Eyebrow (hero) ── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 1.4rem;
+}
+
+.eyebrow__line {
+  width: 30px;
+  height: 2px;
+  background: var(--color-red);
+  flex-shrink: 0;
+}
+
+/* ── Body text variants ── */
+.text-lead {
+  font-size: 0.98rem;
+  font-weight: 300;
+  color: var(--color-gray-light);
+  line-height: 1.9;
+  max-width: 560px;
+}
+
+.text-hero-sub {
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-gray-light);
+  max-width: 480px;
+  margin-bottom: 2.4rem;
+}
+
+.text-italic {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-gray-light);
+  line-height: 1.8;
+}
+
+/* ── Stars ── */
+.stars {
+  color: var(--color-red);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8rem;
+}
+
+/* ── Badges ── */
+.badge-red {
+  background: var(--color-red-alpha);
+  border: 1px solid rgba(204, 34, 41, 0.35);
+  color: #ff6e72;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-sm);
+}
+
+.badge-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(37, 211, 102, 0.1);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  color: var(--color-whatsapp);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.8rem;
+}
+
+/* ── Coverage badge ── */
+.cov-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-red-alpha);
+  color: var(--color-red);
+}

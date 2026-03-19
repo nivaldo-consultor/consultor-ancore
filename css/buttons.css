@@ -1,0 +1,142 @@
+/* ============================================================
+   buttons.css — Todos os estilos de botões e CTAs
+   ============================================================ */
+
+/* ── Base button reset ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  padding: 1rem 2rem;
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    border-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+/* ── Primary (red) ── */
+.btn--primary {
+  background: var(--color-red);
+  color: var(--color-white);
+  box-shadow: var(--shadow-red);
+}
+
+.btn--primary:hover {
+  background: var(--color-red-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-red-lg);
+}
+
+/* ── Secondary (ghost) ── */
+.btn--secondary {
+  background: transparent;
+  color: var(--color-white);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn--secondary:hover {
+  border-color: var(--color-red);
+  background: rgba(204, 34, 41, 0.1);
+}
+
+/* ── White (on red backgrounds) ── */
+.btn--white {
+  background: var(--color-white);
+  color: var(--color-red);
+  box-shadow: var(--shadow-dark);
+}
+
+.btn--white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* ── WhatsApp green ── */
+.btn--whatsapp {
+  background: var(--color-whatsapp);
+  color: var(--color-white);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+}
+
+.btn--whatsapp:hover {
+  background: var(--color-whatsapp-hover);
+  transform: translateY(-1px);
+}
+
+/* ── WhatsApp outline ── */
+.btn--whatsapp-outline {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn--whatsapp-outline:hover {
+  border-color: var(--color-white);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Nav CTA ── */
+.btn--nav {
+  background: var(--color-red);
+  color: var(--color-white);
+  padding: 0.55rem 1.4rem;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.btn--nav:hover {
+  background: var(--color-red-dark);
+  transform: translateY(-1px);
+}
+
+/* ── Floating WhatsApp ── */
+.btn-float-wa {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 200;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--color-whatsapp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  animation: pulse-wa 2.5s infinite;
+}
+
+.btn-float-wa:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.7);
+  animation: none;
+}
+
+@keyframes pulse-wa {
+  0%, 100% { box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5); }
+  50%       { box-shadow: 0 6px 40px rgba(37, 211, 102, 0.85); }
+}
+
+/* ── Size modifier ── */
+.btn--sm {
+  padding: 0.7rem 1.4rem;
+  font-size: 0.82rem;
+}
+
+/* ── Full-width modifier ── */
+.btn--block {
+  width: 100%;
+}

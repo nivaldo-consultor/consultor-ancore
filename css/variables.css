@@ -1,0 +1,102 @@
+/* ============================================================
+   variables.css — Design tokens e reset global
+   ============================================================ */
+
+:root {
+  /* Brand colors */
+  --color-red:        #cc2229;
+  --color-red-dark:   #a81a20;
+  --color-red-light:  #e03038;
+  --color-red-alpha:  rgba(204, 34, 41, 0.15);
+
+  /* Neutrals */
+  --color-dark:       #1a1a1a;
+  --color-dark-2:     #222222;
+  --color-dark-3:     #2d2d2d;
+  --color-dark-4:     #333333;
+  --color-card:       #2a2a2a;
+  --color-border:     #3a3a3a;
+  --color-border-dim: #333333;
+
+  /* Text */
+  --color-white:      #ffffff;
+  --color-off-white:  #f5f5f5;
+  --color-gray:       #888888;
+  --color-gray-light: #cccccc;
+
+  /* Third-party */
+  --color-whatsapp:   #25D366;
+  --color-whatsapp-hover: #1da851;
+
+  /* Typography */
+  --font-display: 'Montserrat', sans-serif;
+  --font-body:    'Open Sans', sans-serif;
+
+  /* Spacing scale */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  7rem;
+
+  /* Layout */
+  --gutter:    6vw;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-red:    0 6px 24px rgba(204, 34, 41, 0.4);
+  --shadow-red-lg: 0 10px 32px rgba(204, 34, 41, 0.5);
+  --shadow-dark:   0 6px 24px rgba(0, 0, 0, 0.25);
+
+  /* Transitions */
+  --transition-fast:   0.2s ease;
+  --transition-base:   0.3s ease;
+  --transition-slow:   0.5s ease;
+
+  /* Nav height */
+  --nav-height: 72px;
+}
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-dark);
+  color: var(--color-white);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

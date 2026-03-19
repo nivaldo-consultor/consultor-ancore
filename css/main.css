@@ -1,0 +1,26 @@
+/* ============================================================
+   main.css — Entry point: importa todos os módulos CSS
+   ============================================================ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* Design tokens e reset */
+@import './variables.css';
+
+/* Base e tipografia */
+@import './typography.css';
+
+/* Layout e utilidades */
+@import './layout.css';
+
+/* Componentes */
+@import './buttons.css';
+@import './nav.css';
+
+/* Seções */
+@import './hero.css';
+@import './sections.css';
+
+/* Animações */
+@import './animations.css';
