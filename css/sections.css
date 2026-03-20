@@ -444,6 +444,23 @@
   color: var(--color-gray);
 }
 
+ 
+.site-footer__dev {
+  font-size: 0.75rem;
+  color: var(--color-gray);
+}
+ 
+.site-footer__dev a {
+  color: var(--color-gray-light);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+ 
+.site-footer__dev a:hover {
+  color: var(--color-red);
+}
+
 .site-footer__links {
   display: flex;
   gap: 1.5rem;
